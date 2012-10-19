@@ -1,0 +1,2 @@
+module LeisureHelper
+end
