@@ -5,7 +5,8 @@ LeisureAdvisor::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
-  resources :leisure      
+  #resources :leisure
+  root :to =>"leisure#index"      
   #match '/leisure/benefits' => 'leisure#benefits'  
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
