@@ -16,8 +16,9 @@ group :development do
 end
 group :production do
   gem 'pg'
-end
-group :assets do
+end  
+
+#group :assets do
   gem 'sass-rails',   '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
 
@@ -25,7 +26,7 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
-end
+#end
 
 gem 'jquery-rails'
 
