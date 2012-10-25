@@ -1,20 +1,75 @@
-<div class="row">
-<div class="span4">
-<p> Hello There! </p>
-</div>
-<div class="span4"> 
-	<p> Hello There Again! </p>   
-</div>
-<div class="span4"> 
-	<p> Hello There Again! </p>   
-</div>
-</div>
+
+	<div class="span6">
+		<p><b>Specific (and strategic):</b></p>
+	</div>
+	<div class="span6">
+		<p>Linked to position summary, departmental goals/mission, 
+	 and/or overall School of Medicine goals and strategic plans.  Answers the question—Who? and What?</p>
+	</div> 
+	<div class="span6">
+		<p><b>Measurable:</b></p>
+	</div>
+	<div class="span6">
+		<p>The success toward meeting the goal can be measured.  Answers the question—How?</p>
+	</div> 
+	 <div class="span6">
+		<p><b>Attainable:</b></p>
+	</div>
+	<div class="span6">
+		<p>Goals are realistic and can be achieved in a specific amount of time and are reasonable.</p>
+	</div> 
+	<div class="span6">
+		<p><b>Relevant (results oriented):</b></p>
+	</div>
+	<div class="span6">
+		<p>The goals are aligned with current tasks and projects and focus in one defined area; include the expected result.</p>
+	</div>
+	<div class="span6">
+		<p><b>Time-Framed:</b></p>
+	</div>
+	<div class="span6">
+		<p>  Goals have a clearly defined time-frame including a target or deadline date.</p>
+	</div>
+
+	<div id="notSmart" class="span6">
+		<h3> Example of not a SMART Goal </h3> </p>
+		<p>I will try to complete my coursework on HCI</p>	
+	</div> 
+	<div id="smart" class="span6">
+		<h3> Example of a SMART Goal </h3> </p>
+		<p>I will work on HCI for two hours each day on implementing my project's interface.  I will submit my completed assignment on Sunday, October 29 at 3:00 p.m.</p>	
+	</div>
+	<div class="span12">
+		 <%= semantic_form_for 'goal', :html => { :id => "goal" } do |f| %>
+		    <%= f.input "Goal", :as => :text %>
+		    <%= f.action :submit, :id=>"submit"%>
+		  <% end %>
+	 </div>
+ 
+
+<div class="span6">
+		<p>From Stanford  template </p>
+ </div>  
+
+
+
 <style>
-.span4 {
-    margin-left: 0;
-    padding-left: 19px;
-    border: 1px solid #eee;
-    background-color: #CCFFFF;
+.span6{
+    margin-left: 20px;
+    padding-left: 20px;
+  
+ 
 }
+#notSmart{
+	margin-left: 20px;
+} 
+.formtastic textarea {
+  width: 800px;
+  height: 200px;
+}
+#goal {
+  list-style:none;
+}
+
 </style>
  

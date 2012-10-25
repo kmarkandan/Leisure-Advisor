@@ -5,7 +5,9 @@
 // the compiled file.
 // 
 //= require jquery   
-//= require jquery_ujs   
+//= require jquery_ujs 
+//= require jquery-ui  
 //= require bootstrap-dropdown
-//= require bootstrap   
+//= require bootstrap 
+//= require bootstrap-datepicker  
 

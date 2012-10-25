@@ -16,8 +16,10 @@ group :development do
 end
 group :production do
   gem 'pg'
-end  
-
+end
+gem 'formtastic'  
+gem 'formtastic-bootstrap' 
+gem 'bootstrap-datepicker-rails'
 #group :assets do
   gem 'sass-rails',   '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
@@ -29,6 +31,7 @@ end
 #end
 
 gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

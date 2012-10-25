@@ -1,0 +1,24 @@
+<div class="span12">
+		<%= semantic_form_for 'people', :html => { :id => "people_find" } do |f| %> 
+		
+		    <%= f.input "Activity", :as => :text %>
+		    <%= f.input "Amount of Money you are willing to spend"%> 
+		    <%= f.input "Number of people needed"%>
+		    <%= f.input "Select Date", :input_html => { :id => "people_date" } %>
+		    <%= f.actions do %>
+				    <%= f.submit "Save Info" %>
+				<% end %> 
+		 <% end %>
+ </div>
+
+<style> 
+#people_find {
+  list-style:none;
+}
+</style>  
+<script>
+$(document).ready(function(ev) {
+	alert("Hello");
+  $("#people_date").datepicker();
+});
+</script>

@@ -1,0 +1,20 @@
+<div class="span12">
+		<% UiDatePickerRails3.activate :formtastic %>
+		<%= semantic_form_for 'people', :html => { :id => "people_find" } do |f| %> 
+		 <%= f.inputs do %>
+		    <%= f.input "Activity", :as => :text %>
+		    <%= f.input "Amount of Money you are willing to spend"%> 
+		    <%= f.input "Number of people needed"%>
+		    <%= f.input "Date of Activity", :as => :ui_date_picker %>
+		    <%= f.actions do %>
+				    <%= f.submit "Save Info" %>
+				<% end %> 
+		  <% end %> 
+		 <% end %>
+ </div>
+
+<style> 
+#people_find {
+  list-style:none;
+}
+</style>
