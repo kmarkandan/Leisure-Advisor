@@ -41,14 +41,10 @@
 <script>
 $(document).ready(function(ev) {
  $("#people_date").datepicker(); 
- $('#money_willing').blur(function()
- {
-                 
-$("#money_willing").toNumber().formatCurrency();
- });
-
-$('.timepicker-default').timepicker();
-
-  
+ 	$('#money_willing').blur(function()
+ 	{             
+		$("#money_willing").toNumber().formatCurrency();
+ 	});
+	$('.timepicker-default').timepicker();
 });
 </script>
