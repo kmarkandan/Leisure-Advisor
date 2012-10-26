@@ -7,7 +7,8 @@
 //= require jquery   
 //= require jquery_ujs 
 //= require jquery-ui  
-//= require bootstrap-dropdown
-//= require bootstrap 
-//= require bootstrap-datepicker  
+//= require bootstrap
+//= require jquery-ui-sliderAccess
+//= require jquery-ui-timepicker-addon 
+//= require jquery.formatCurrency-1.4.0  
 

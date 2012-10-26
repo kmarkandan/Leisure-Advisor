@@ -1,14 +1,36 @@
-<div class="span12">
+<div class="container">
 		<%= semantic_form_for 'people', :html => { :id => "people_find" } do |f| %> 
 		
-		    <%= f.input "Activity", :as => :text %>
-		    <%= f.input "Amount of Money you are willing to spend"%> 
-		    <%= f.input "Number of people needed"%>
-		    <%= f.input "Select Date", :input_html => { :id => "people_date" } %>
+	   
+		 <div class="span12">
+		 	<%= f.input "Activity", :as => :text %> 
+		 </div>
+		     <div class="span4">
+		     		<div class="input-append bootstrap-timepicker-component">
+				      <%= f.input "Select Time", :input_html => { :id => "people_time", :class => "timepicker-default input-small" } %>
+					 
+		           
+		      </div> 
+		    </div>
+		    <div class="span4"> 
+					<div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+					  <%= f.input "Select Date", :input_html => { :id => "people_date"}  %>   
+					</div>
+			   			 
+			       	 
+			  </div>
+		
+		    <div class="span12"> 
+		    <%= f.input "Amount of Money you are willing to spend", :input_html => { :id => "money_willing"}, :as => :number %>  
+		     
+		   <%= f.input "Number of people needed"%>
+		    
 		    <%= f.actions do %>
 				    <%= f.submit "Save Info" %>
-				<% end %> 
-		 <% end %>
+				<% end %>
+				</div> 
+		 <% end %> 
+		
  </div>
 
 <style> 
@@ -18,7 +40,15 @@
 </style>  
 <script>
 $(document).ready(function(ev) {
-	alert("Hello");
-  $("#people_date").datepicker();
+ $("#people_date").datepicker(); 
+ $('#money_willing').blur(function()
+ {
+                 
+$("#money_willing").toNumber().formatCurrency();
+ });
+
+$('.timepicker-default').timepicker();
+
+  
 });
 </script>

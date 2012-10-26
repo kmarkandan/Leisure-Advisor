@@ -30,6 +30,8 @@ gem 'bootstrap-datepicker-rails'
   gem 'uglifier', '>= 1.0.3'
 #end
 
+gem 'client_side_validations'
+
 gem 'jquery-rails'
 
 
